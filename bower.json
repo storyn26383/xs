@@ -1,0 +1,12 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "authors": [
+    "storyn26383 <storyn26383@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome-sass": "https://github.com/FortAwesome/font-awesome-sass.git#~4.4.0"
+  }
+}
