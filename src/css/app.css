@@ -1157,19 +1157,43 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.1;
   color: inherit; }
   h1 small,
-  h1 .small, h2 small,
-  h2 .small, h3 small,
-  h3 .small, h4 small,
-  h4 .small, h5 small,
-  h5 .small, h6 small,
+  h1 .small,
+  h1 .timetable td .class,
+  .timetable td h1 .class, h2 small,
+  h2 .small,
+  h2 .timetable td .class,
+  .timetable td h2 .class, h3 small,
+  h3 .small,
+  h3 .timetable td .class,
+  .timetable td h3 .class, h4 small,
+  h4 .small,
+  h4 .timetable td .class,
+  .timetable td h4 .class, h5 small,
+  h5 .small,
+  h5 .timetable td .class,
+  .timetable td h5 .class, h6 small,
   h6 .small,
+  h6 .timetable td .class,
+  .timetable td h6 .class,
   .h1 small,
-  .h1 .small, .h2 small,
-  .h2 .small, .h3 small,
-  .h3 .small, .h4 small,
-  .h4 .small, .h5 small,
-  .h5 .small, .h6 small,
-  .h6 .small {
+  .h1 .small,
+  .h1 .timetable td .class,
+  .timetable td .h1 .class, .h2 small,
+  .h2 .small,
+  .h2 .timetable td .class,
+  .timetable td .h2 .class, .h3 small,
+  .h3 .small,
+  .h3 .timetable td .class,
+  .timetable td .h3 .class, .h4 small,
+  .h4 .small,
+  .h4 .timetable td .class,
+  .timetable td .h4 .class, .h5 small,
+  .h5 .small,
+  .h5 .timetable td .class,
+  .timetable td .h5 .class, .h6 small,
+  .h6 .small,
+  .h6 .timetable td .class,
+  .timetable td .h6 .class {
     font-weight: normal;
     line-height: 1;
     color: #777777; }
@@ -1180,14 +1204,26 @@ h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px; }
   h1 small,
-  h1 .small, .h1 small,
+  h1 .small,
+  h1 .timetable td .class,
+  .timetable td h1 .class, .h1 small,
   .h1 .small,
+  .h1 .timetable td .class,
+  .timetable td .h1 .class,
   h2 small,
-  h2 .small, .h2 small,
+  h2 .small,
+  h2 .timetable td .class,
+  .timetable td h2 .class, .h2 small,
   .h2 .small,
+  .h2 .timetable td .class,
+  .timetable td .h2 .class,
   h3 small,
-  h3 .small, .h3 small,
-  .h3 .small {
+  h3 .small,
+  h3 .timetable td .class,
+  .timetable td h3 .class, .h3 small,
+  .h3 .small,
+  .h3 .timetable td .class,
+  .timetable td .h3 .class {
     font-size: 65%; }
 
 h4, .h4,
@@ -1196,14 +1232,26 @@ h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px; }
   h4 small,
-  h4 .small, .h4 small,
+  h4 .small,
+  h4 .timetable td .class,
+  .timetable td h4 .class, .h4 small,
   .h4 .small,
+  .h4 .timetable td .class,
+  .timetable td .h4 .class,
   h5 small,
-  h5 .small, .h5 small,
+  h5 .small,
+  h5 .timetable td .class,
+  .timetable td h5 .class, .h5 small,
   .h5 .small,
+  .h5 .timetable td .class,
+  .timetable td .h5 .class,
   h6 small,
-  h6 .small, .h6 small,
-  .h6 .small {
+  h6 .small,
+  h6 .timetable td .class,
+  .timetable td h6 .class, .h6 small,
+  .h6 .small,
+  .h6 .timetable td .class,
+  .timetable td .h6 .class {
     font-size: 75%; }
 
 h1, .h1 {
@@ -1237,7 +1285,8 @@ p {
       font-size: 21px; } }
 
 small,
-.small {
+.small,
+.timetable td .class {
   font-size: 85%; }
 
 mark,
@@ -1251,7 +1300,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .timetable th, .timetable td {
   text-align: center; }
 
 .text-justify {
@@ -1423,14 +1472,18 @@ blockquote {
     margin-bottom: 0; }
   blockquote footer,
   blockquote small,
-  blockquote .small {
+  blockquote .small,
+  blockquote .timetable td .class,
+  .timetable td blockquote .class {
     display: block;
     font-size: 80%;
     line-height: 1.42857;
     color: #777777; }
     blockquote footer:before,
     blockquote small:before,
-    blockquote .small:before {
+    blockquote .small:before,
+    blockquote .timetable td .class:before,
+    .timetable td blockquote .class:before {
       content: '\2014 \00A0'; }
 
 .blockquote-reverse,
@@ -1443,16 +1496,24 @@ blockquote.pull-right {
   .blockquote-reverse footer:before,
   .blockquote-reverse small:before,
   .blockquote-reverse .small:before,
+  .blockquote-reverse .timetable td .class:before,
+  .timetable td .blockquote-reverse .class:before,
   blockquote.pull-right footer:before,
   blockquote.pull-right small:before,
-  blockquote.pull-right .small:before {
+  blockquote.pull-right .small:before,
+  blockquote.pull-right .timetable td .class:before,
+  .timetable td blockquote.pull-right .class:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
   .blockquote-reverse .small:after,
+  .blockquote-reverse .timetable td .class:after,
+  .timetable td .blockquote-reverse .class:after,
   blockquote.pull-right footer:after,
   blockquote.pull-right small:after,
-  blockquote.pull-right .small:after {
+  blockquote.pull-right .small:after,
+  blockquote.pull-right .timetable td .class:after,
+  .timetable td blockquote.pull-right .class:after {
     content: '\00A0 \2014'; }
 
 address {
@@ -4577,11 +4638,17 @@ button.list-group-item {
   border-color: #337ab7; }
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
-  .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
+  .list-group-item.active .list-group-item-heading > .small,
+  .list-group-item.active .timetable td .list-group-item-heading > .class,
+  .timetable td .list-group-item.active .list-group-item-heading > .class, .list-group-item.active:hover .list-group-item-heading,
   .list-group-item.active:hover .list-group-item-heading > small,
-  .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
+  .list-group-item.active:hover .list-group-item-heading > .small,
+  .list-group-item.active:hover .timetable td .list-group-item-heading > .class,
+  .timetable td .list-group-item.active:hover .list-group-item-heading > .class, .list-group-item.active:focus .list-group-item-heading,
   .list-group-item.active:focus .list-group-item-heading > small,
-  .list-group-item.active:focus .list-group-item-heading > .small {
+  .list-group-item.active:focus .list-group-item-heading > .small,
+  .list-group-item.active:focus .timetable td .list-group-item-heading > .class,
+  .timetable td .list-group-item.active:focus .list-group-item-heading > .class {
     color: inherit; }
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
     color: #c7ddef; }
@@ -4718,8 +4785,10 @@ button.list-group-item-danger {
   .panel-title > a,
   .panel-title > small,
   .panel-title > .small,
+  .timetable td .panel-title > .class,
   .panel-title > small > a,
-  .panel-title > .small > a {
+  .panel-title > .small > a,
+  .timetable td .panel-title > .class > a {
     color: inherit; }
 
 .panel-footer {
@@ -7811,8 +7880,7 @@ button.close {
 
 .timetable th, .timetable td {
   vertical-align: middle !important; }
-@media (max-width: 767px) {
-  .timetable .break {
-    white-space: pre; }
-    .timetable .break:before {
-      content: '\A'; } }
+.timetable td .class {
+  white-space: pre; }
+  .timetable td .class:before {
+    content: '\A'; }

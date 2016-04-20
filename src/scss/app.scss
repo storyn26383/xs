@@ -7,15 +7,15 @@
 .timetable {
 	th, td {
 		vertical-align: middle !important;
+		@extend .text-center;
 	}
 
-	@media (max-width: $screen-xs-max) {
-		.break {
-			white-space: pre;
+	td .class {
+		white-space: pre;
+		@extend .small;
 
-			&:before {
-				content: '\A';
-			}
+		&:before {
+			content: '\A';
 		}
 	}
 }
